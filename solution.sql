@@ -10,6 +10,67 @@ with abc as (SELECT name,dense_rank() over(ORDER by salary desc) as rank FROM em
 )
 SELECT name FROM abc where rank=2;
 
+-- ques 2
+
+
+
+-- ques 3
+
+-- INNER JOIN
+select * from a join b on a.col = b.col
+
+col  col
+1     1
+1     1
+0     0
+
+-- LEFT JOIN
+select * from a left join b on a.col = b.col
+
+col  col
+1    1
+1    1  
+0    0
+-    -
+
+-- RIGHT JOIN
+select * from a right join b on a.col = b.col
+
+col  col
+1     1
+1     1
+0     0
+-     -
+-     -
+
+-- FULL OUTER JOIN
+select * from a outer join b on a.col = b.col
+
+col  col
+1     1
+1     1
+0     0
+-     -
+-     -
+-     -
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
