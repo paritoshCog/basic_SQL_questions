@@ -95,7 +95,7 @@ insert into bowler values('Suresh');
 select * from bowler;
 
 
-
+insert into indian_cricket_team  (select player_name from Batsman UNION SELECT player_name FROM bowler);
 
 
 
