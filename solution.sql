@@ -55,6 +55,47 @@ col  col
 -     -
 
 
+create table batsman( 
+    player_name varchar(20) 
+);
+
+create table bowler( 
+    player_name varchar(20) 
+);
+
+insert into batsman values('sachin');
+insert into batsman values('Dhoni');
+insert into batsman values('Dhoni');
+insert into batsman values('Sehwag');
+insert into batsman values('Virat');
+insert into batsman values('Virat');
+insert into batsman values('sachin');
+insert into batsman values('Gambhir');
+insert into batsman values('Suresh');
+insert into batsman values('Suresh');
+insert into batsman values('Yuvraj');
+insert into batsman values('Rohit');
+
+delete from batsman where player_name = 'sachin';
+
+select * from batsman;
+
+
+insert into bowler values('Zaheer');
+insert into bowler values('Sreesanth');
+insert into bowler values('Yuvraj');
+insert into bowler values('Harbhajan');
+insert into bowler values('Ashish');
+insert into bowler values('Zaheer');
+insert into bowler values('Irfan');
+insert into bowler values('Zaheer');
+insert into bowler values('Yuvraj');
+insert into bowler values('Suresh');
+
+select * from bowler;
+
+
+
 
 
 
