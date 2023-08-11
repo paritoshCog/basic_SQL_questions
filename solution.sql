@@ -116,7 +116,7 @@ gt.remarks = 'average';
 
 -- question 6
 
-select player_name
+select player_name, skill,
 case skill
 when 'Bat' then 'batsman'
 when 'Bowl' then 'bowler'
