@@ -12,6 +12,7 @@ SELECT name FROM abc where rank=2;
 
 -- ques 2
 
+delete from student_table where rowid not in (select min(rowid) from student_table group by roll_no);
 
 
 -- ques 3
@@ -54,7 +55,8 @@ col  col
 -     -
 -     -
 
-
+-- question 4
+    
 create table batsman( 
     player_name varchar(20) 
 );
@@ -98,6 +100,8 @@ select * from bowler;
 insert into indian_cricket_team  (select player_name from Batsman UNION SELECT player_name FROM bowler);
 
 
+select student_name, subject_name from student_table st
+join
 
 
 
