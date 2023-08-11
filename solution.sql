@@ -96,13 +96,21 @@ insert into bowler values('Suresh');
 
 select * from bowler;
 
-
+-- ans
 insert into indian_cricket_team  (select player_name from Batsman UNION SELECT player_name FROM bowler);
 
 
+
+
+-- question 5
+
 select student_name, subject_name from student_table st
 join
-
+subject_table sj ON st.subject_id = sj.student_id
+join
+grade_table gt ON gt.grade = st.grade 
+where
+gt.remarks = 'average';
 
 
 
