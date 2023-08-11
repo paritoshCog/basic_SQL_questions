@@ -114,6 +114,19 @@ gt.remarks = 'average';
 
 
 
+-- question 6
+
+select player_name
+case skill
+when 'Bat' then 'batsman'
+when 'Bowl' then 'bowler'
+when 'All' then 'AllRounder'
+end as 
+proper_skill
+from player_table;
+
+
+
 
 
 
