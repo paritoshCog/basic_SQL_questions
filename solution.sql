@@ -130,7 +130,44 @@ from player_table;
 select * from employee_table where project_id = 'Project_2';
 
 
+-- question 8
 
+create table customer_table(
+    customer_id number(20),
+    customer_name varchar2(30),
+    pan_number varchar2(30),
+    branch_name varchar2(30),
+    primary key(customer_id)
+);
+
+CREATE table Customer_transaction_table(
+Customer_id NUMBER NOT NULL,
+Customer_transaction_date  date default sysdate,
+Transaction_amnt number,
+Transaction_mode varchar2(20),
+FOREIGN KEY(Customer_id) REFERENCES Customer_table(Customer_id));
+
+
+create SEQUENCE sqn START with 1 ;
+
+CREATE table transaction_mode_table(
+transaction_id number default sqn.nextval ,
+transaction_mode varchar2(20)
+
+    );
+
+
+
+
+
+
+
+
+
+
+
+-- question 9
+select id, employee_name, concat('employee_name','maildomain') as email_id from employee_table;
 
 
 
