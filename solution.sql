@@ -125,6 +125,12 @@ end as
 proper_skill
 from player_table;
 
+-- question 7
+
+select * from employee_table where project_id = 'Project_2';
+
+
+
 
 
 
