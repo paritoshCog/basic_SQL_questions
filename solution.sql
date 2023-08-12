@@ -171,6 +171,10 @@ select id, employee_name, concat('employee_name','maildomain') as email_id from 
 
 
 
+-- question 10
+SELECT abs(data_of_joining-Date'2023-07-24') AS DateDiff FROM employee_table;
+
+
 
 
 
