@@ -167,7 +167,7 @@ transaction_mode varchar2(20)
 
 
 -- question 9
-select id, employee_name, concat('employee_name','maildomain') as email_id from employee_table;
+select id, employee_name, concat(employee_name,'@',maildomain) as email_id from employee_table;
 
 
 
